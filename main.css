@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/*
+font-family: 'Open Sans',
+sans-serif;
+font-family: 'Poppins',
+sans-serif;
+*/
+:root{
+    --mainColor: hsl(257, 40%, 49%); 
+    --secondColor: hsl(300, 69%, 71%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+
+}
+body{
+    background: var(--mainColor);
+   
+  
+        background-image: url(./img/bg-mobile.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left top;
+      
+}
+.container{
+    width: 100%;
+    padding:0 7%;
+
+}
+.hero-img{
+    width: 100%;
+}
+.logo{
+    display: block;
+margin-top: 1.9rem;
+    margin-bottom: 1.9rem;
+}
+.logo-svg{
+    width: 50%;
+}
+.paragraphs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+.heading, .desc{
+    color: white;
+  
+}
+.heading{
+    font-family: 'Poppins',
+            sans-serif;
+    margin-top: 5.5rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-align: center;
+   
+}
+.desc {
+    margin-top: 1rem;
+font-family: 'Open Sans',
+        sans-serif;
+        text-align: center;
+line-height: 30px;
+font-size: 1.08rem;
+}
+.btn{
+  cursor: pointer;
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 85px;
+    margin-top: 25px;
+box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.151);
+transition: all 0.1s ease-out;
+font-size: 1.03rem;
+font-family: 'Open Sans',
+        sans-serif;
+    text-align: center;
+    color: var(--mainColor);
+}
+.btn:hover{
+    color: white;
+background-color: var(--secondColor);
+}
+.social{
+    margin-top: 5rem;
+width: 100%;
+text-align: center;
+}
+.social i{
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    margin: 0 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    transition: all 0.2s ease-out;
+}
+.fa-facebook-f{
+    padding: 10px 13px !important;
+}
+
+.social i:hover{
+color: var(--secondColor);
+border-color: var(--secondColor);
+}
+footer{
+    width: 100%;
+margin-top: 20px;
+padding-bottom: 10px;
+}
+.attribution{
+  text-align: center;
+  color: white;
+font-family: 'Open Sans',
+        sans-serif;
+}
+footer a {
+    color: white;
+}
+footer a:hover{
+    color: var(--secondColor);
+}
+@media only screen and (min-width: 748px) {
+    body {
+        background: var(--mainColor);
+        background-image: url(./img/bg-desktop.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+.container{
+  
+    padding: 0 5%;
+    max-width: 1440px;
+    margin: auto;
+}
+.main-content{
+    display: flex;
+;
+
+
+}
+.logo {
+    display: block;
+    margin-top: 3rem;
+    margin-bottom: 3.8rem;
+}
+
+.logo-svg {
+    width:17%;
+}
+.hero-img {
+    width: 60%;
+}
+.paragraphs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   margin-left: 2.2rem;
+width: 40%;
+
+}
+.heading {
+    font-family: 'Poppins',
+        sans-serif;
+ margin-top: 2.5rem;
+    font-weight: 600;
+    font-size: 2.8rem;
+    text-align: left;
+
+}
+
+.desc {
+    margin-top: 1rem;
+    font-family: 'Open Sans',
+        sans-serif;
+    text-align: left;
+    line-height: 30px;
+    font-size: 1.05rem;
+}
+.btn {
+    padding: 16px 75px;
+}
+.social {
+    margin-top: 15px;
+    text-align: right;
+   
+}
+}
